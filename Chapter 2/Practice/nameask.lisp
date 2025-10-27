@@ -1,0 +1,10 @@
+(defun ask-name ()
+    (format t "please type your name ")
+    (force-output t)
+    (let ((name (read)))
+        (format t "hi there ~a" name)
+        (force-output t)
+    )
+)
+
+(ask-name)
